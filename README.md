@@ -1,55 +1,46 @@
+# Hospital Readmission Assessment Baseline
 
-# Hospital Readmission Prediction
+Shared baseline for Logistic Regression, Decision Tree and KNN.
 
-## Project Overview
+## Setup and pipeline
 
-A Machine Learning project that predicts whether a
-hospitalized patient with diabetes will be readmitted
-within 30 days.
+Install dependencies with `pip install -r requirements.txt` in a virtual environment.
+Obtain the Diabetes 130-US Hospitals Dataset separately and place
+`diabetic_data.csv` in `data/`. Run scripts from the project root in this order:
 
-## Dataset
+1. `python src/data_preprocessing.py`
+2. `python src/data_splitting.py`
+3. `python src/model_preprocessing.py`
+4. Run the required baseline script: `src/logistic_regression_model.py`,
+   `src/decision_tree_model.py`, or `src/knn_model.py`.
 
-Diabetes 130-US Hospitals Dataset (1999–2008).
+These commands perform processing and training when a member runs them.
+No models were retrained while preparing this baseline.
+Patient split assignments, processed datasets, feature matrices and trained models
+are local artifacts and must not be committed. Exploration output is aggregate-only.
+Existing aggregate Logistic Regression and KNN metrics were copied from the
+six-model integration; no Decision Tree metric file was created or inferred.
 
-## Machine Learning Algorithms
+## Contributions and provenance
 
-1. Logistic Regression
-2. K-Nearest Neighbors
-3. Linear Support Vector Machine
-4. Decision Tree
-5. Random Forest
-6. XGBoost
+This baseline copies existing implementations without changing their model logic.
+Original contributions remain in the local six-model development history:
 
-## Technology Stack
+- `b454ce1`: original member-1 development commit.
+- `dbfef4c`: original member-2 development commit.
+- `1953615`: sanitized six-model integration snapshot used for selected files.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Matplotlib
-- Seaborn
+The baseline commit records integration work, not new authorship of these models.
+The complete six-model branch is retained locally as `six-model-integration`.
+`main-dev` inherits existing main history; sanitizing current files does not remove
+historical patient-level output.
 
-## Project Structure
+## Team workflow
 
-- data/ - Dataset files (download separately)
-- src/ - Python source code
-- models/ - Trained models
-- results/ - Evaluation results and charts
-
-## Installation
-
-1. Clone the repository.
-2. Create a Python virtual environment.
-3. Install requirements.
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Download the dataset and place the CSV files
-   inside the data folder.
-
-## Team
-
-Machine Learning Project - Hospital Readmission Prediction
+Each member starts from the same `main-dev` baseline and works on their own branch:
+`member-1`, `member-2`, `member-3`, or `member-4`.
+Open pull requests with **base: main-dev** and **compare: your member branch**.
+Before a pull request, fetch origin and merge `origin/main-dev` into your branch
+if the shared baseline has moved. Do not commit datasets, credentials or models.
+The repository owner must grant each member write access (or use fork-based PRs).
+Require pull requests on main-dev through repository branch protection settings.

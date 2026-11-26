@@ -2,16 +2,6 @@
 ===== DATASET DIMENSIONS =====
 (101766, 50)
 
-===== FIRST FIVE RECORDS =====
-   encounter_id  patient_nbr             race  ... change diabetesMed readmitted
-0       2278392      8222157        Caucasian  ...     No          No         NO
-1        149190     55629189        Caucasian  ...     Ch         Yes        >30
-2         64410     86047875  AfricanAmerican  ...     No         Yes         NO
-3        500364     82442376        Caucasian  ...     Ch         Yes         NO
-4         16680     42519267        Caucasian  ...     Ch         Yes         NO
-
-[5 rows x 50 columns]
-
 ===== COLUMN INFORMATION =====
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 101766 entries, 0 to 101765

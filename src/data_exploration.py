@@ -7,8 +7,9 @@ df = pd.read_csv("data/diabetic_data.csv")
 print("\n===== DATASET DIMENSIONS =====")
 print(df.shape)
 
-print("\n===== FIRST FIVE RECORDS =====")
-print(df.head())
+print("\n===== DATASET SUMMARY =====")
+print("Total records:", len(df))
+print("Total features:", len(df.columns))
 
 print("\n===== COLUMN INFORMATION =====")
 df.info()

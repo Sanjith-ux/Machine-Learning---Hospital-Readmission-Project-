@@ -1,16 +1,47 @@
+
 # Python environment
 .venv/
+venv/
+env/
+ENV/
+.virtualenv/
+.conda/
 
 # Dataset files
-data/*.csv
-data/*.zip
+data/*
+!data/.gitkeep
 
-# Generated results
+# Trained models (keep the directory placeholder)
+models/*
+!models/.gitkeep
+
+# Generated patient-level datasets
 results/*.csv
+# Also protect patient-level exports if moved into subdirectories
+processed_data*.csv
+patient_split*.csv
+*split_assignments*.csv
+train_data*.csv
+test_data*.csv
+X_train*.csv
+X_test*.csv
+y_train*.csv
+y_test*.csv
 
-# Model files
-models/*.pkl
-models/*.joblib
+# Serialized models and processed feature matrices
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.keras
 
 # Python cache
 __pycache__/
@@ -18,3 +49,14 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+.aws/
+.ssh/
+*.pem
+*.key
+credentials*.json
+secrets*.json
+secrets*.toml
