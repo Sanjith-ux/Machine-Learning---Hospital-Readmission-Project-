@@ -1,0 +1,572 @@
+{
+  "pandas_version": "2.3.3",
+  "overall_passed": true,
+  "checks": {
+    "original_duplicate_encounter_ids": {
+      "passed": true,
+      "observed": 0
+    },
+    "original_missing_patient_nbr": {
+      "passed": true,
+      "observed": 0
+    },
+    "original_missing_encounter_id": {
+      "passed": true,
+      "observed": 0
+    },
+    "original_readmission_categories": {
+      "passed": true,
+      "observed": 0
+    },
+    "cleaned_duplicate_encounter_ids": {
+      "passed": true,
+      "observed": 0
+    },
+    "cleaned_missing_patient_nbr": {
+      "passed": true,
+      "observed": 0
+    },
+    "cleaned_missing_encounter_id": {
+      "passed": true,
+      "observed": 0
+    },
+    "cleaned_readmission_categories": {
+      "passed": true,
+      "observed": 0
+    },
+    "discharge_codes_parseable": {
+      "passed": true,
+      "observed": 0
+    },
+    "excluded_discharge_codes_absent": {
+      "passed": true,
+      "observed": 0
+    },
+    "expected_cohort": {
+      "passed": true,
+      "observed": 100114
+    },
+    "binary_target": {
+      "passed": true,
+      "observed": 0
+    },
+    "target_mapping": {
+      "passed": true,
+      "observed": 0
+    },
+    "readmission_labels_match_source": {
+      "passed": true,
+      "observed": 0
+    },
+    "original_dimensions": {
+      "passed": true,
+      "observed": [
+        101766,
+        50
+      ]
+    },
+    "cleaned_dimensions": {
+      "passed": true,
+      "observed": [
+        100114,
+        51
+      ]
+    },
+    "schema": {
+      "passed": true,
+      "observed": 51
+    },
+    "cleaned_unique_patients": {
+      "passed": true,
+      "observed": 70439
+    }
+  },
+  "counts": {
+    "original_encounters": 101766,
+    "excluded_encounters": 1652,
+    "cleaned_encounters": 100114,
+    "cleaned_unique_patients": 70439,
+    "target_distribution": {
+      "0": 88757,
+      "1": 11357
+    },
+    "original_readmission_distribution": {
+      "NO": 54864,
+      ">30": 35545,
+      "<30": 11357
+    },
+    "excluded_by_code": {
+      "11": 1642,
+      "19": 8,
+      "20": 2,
+      "21": 0
+    }
+  },
+  "missingness_definition": "Source: empty or ?; literal None preserved. Cleaned: blank/unknown includes categories lost by shared default parser.",
+  "missing_values": {
+    "original_literal_tokens": {
+      "encounter_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "patient_nbr": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "race": {
+        "count": 2273,
+        "percent": 2.2336
+      },
+      "gender": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "age": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weight": {
+        "count": 98569,
+        "percent": 96.8585
+      },
+      "admission_type_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "discharge_disposition_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "admission_source_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "time_in_hospital": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "payer_code": {
+        "count": 40256,
+        "percent": 39.5574
+      },
+      "medical_specialty": {
+        "count": 49949,
+        "percent": 49.0822
+      },
+      "num_lab_procedures": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "num_procedures": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "num_medications": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_outpatient": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_emergency": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_inpatient": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "diag_1": {
+        "count": 21,
+        "percent": 0.0206
+      },
+      "diag_2": {
+        "count": 358,
+        "percent": 0.3518
+      },
+      "diag_3": {
+        "count": 1423,
+        "percent": 1.3983
+      },
+      "number_diagnoses": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "max_glu_serum": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "A1Cresult": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "repaglinide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "nateglinide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "chlorpropamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glimepiride": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "acetohexamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glipizide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glyburide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "tolbutamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "rosiglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "acarbose": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "miglitol": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "troglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "tolazamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "examide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "citoglipton": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "insulin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glyburide-metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glipizide-metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glimepiride-pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "metformin-rosiglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "metformin-pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "change": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "diabetesMed": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "readmitted": {
+        "count": 0,
+        "percent": 0.0
+      }
+    },
+    "cleaned_export": {
+      "encounter_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "patient_nbr": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "race": {
+        "count": 2239,
+        "percent": 2.2365
+      },
+      "gender": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "age": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weight": {
+        "count": 96958,
+        "percent": 96.8476
+      },
+      "admission_type_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "discharge_disposition_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "admission_source_id": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "time_in_hospital": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "payer_code": {
+        "count": 39591,
+        "percent": 39.5459
+      },
+      "medical_specialty": {
+        "count": 49129,
+        "percent": 49.0731
+      },
+      "num_lab_procedures": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "num_procedures": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "num_medications": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_outpatient": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_emergency": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "number_inpatient": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "diag_1": {
+        "count": 21,
+        "percent": 0.021
+      },
+      "diag_2": {
+        "count": 358,
+        "percent": 0.3576
+      },
+      "diag_3": {
+        "count": 1421,
+        "percent": 1.4194
+      },
+      "number_diagnoses": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "max_glu_serum": {
+        "count": 94890,
+        "percent": 94.7819
+      },
+      "A1Cresult": {
+        "count": 83238,
+        "percent": 83.1432
+      },
+      "metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "repaglinide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "nateglinide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "chlorpropamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glimepiride": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "acetohexamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glipizide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glyburide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "tolbutamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "rosiglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "acarbose": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "miglitol": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "troglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "tolazamide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "examide": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "citoglipton": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "insulin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glyburide-metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glipizide-metformin": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "glimepiride-pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "metformin-rosiglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "metformin-pioglitazone": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "change": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "diabetesMed": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "readmitted": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "target": {
+        "count": 0,
+        "percent": 0.0
+      }
+    }
+  },
+  "None_category_audit": {
+    "A1Cresult": {
+      "source_literal_None": 84748,
+      "default_parser_missing": 84748,
+      "literal_None_parsed_as_missing": 84748,
+      "retained_source_literal_None": 83238,
+      "processed_blank_or_missing": 83238
+    },
+    "max_glu_serum": {
+      "source_literal_None": 96420,
+      "default_parser_missing": 96420,
+      "literal_None_parsed_as_missing": 96420,
+      "retained_source_literal_None": 94890,
+      "processed_blank_or_missing": 94890
+    }
+  },
+  "diagnosis_mapping_audit": {
+    "status": "EXACT_LOOKUP_AUDIT_ONLY",
+    "conflicting_reference_codes": 0,
+    "reference_sha256": "1ea61ec6161076266287e77596023aab89cbfd334f851ec9ea7ea25bc5a0f70b",
+    "warning": "Trailing-zero candidates are NOT verified clinical mappings and are not applied.",
+    "columns": {
+      "diag_1": {
+        "nonmissing": 101745,
+        "missing": 21,
+        "exact_matches": 9495,
+        "unmatched": 92250,
+        "unverified_zero_append_candidates": 88058,
+        "exact_coverage_percent": 9.3322
+      },
+      "diag_2": {
+        "nonmissing": 101408,
+        "missing": 358,
+        "exact_matches": 13591,
+        "unmatched": 87817,
+        "unverified_zero_append_candidates": 85308,
+        "exact_coverage_percent": 13.4023
+      },
+      "diag_3": {
+        "nonmissing": 100343,
+        "missing": 1423,
+        "exact_matches": 10744,
+        "unmatched": 89599,
+        "unverified_zero_append_candidates": 88030,
+        "exact_coverage_percent": 10.7073
+      }
+    }
+  },
+  "warnings": [
+    "Shared default parsing loses the literal None laboratory category; no shared behavior was changed.",
+    "Dimension checks are specific to the supplied UCI cohort and must be reviewed for a different source version."
+  ],
+  "input_sha256": {
+    "raw": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+    "processed": "62b259411eadd162ed5b3e454eb9d5dd224e59e656a6020233181d0199bc3924"
+  }
+}
