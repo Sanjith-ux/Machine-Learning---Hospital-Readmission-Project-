@@ -1,0 +1,8 @@
+{
+  "best_params": {
+    "model__n_neighbors": 31,
+    "model__weights": "distance"
+  },
+  "best_cv_pr_auc": 0.18130004179805437,
+  "tuning_seconds": 833.2174160480499
+}
